@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ClickBeer | Plataforma da Rede</title>
+<meta name="description" content="A plataforma que une todas as lojas ClickBeer em um só clube: pontos, cashback, ofertas personalizadas e o delivery mais rápido de Campo Grande.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<header class="site-header" id="top">
+  <div class="wrap header-inner">
+    <a href="#top" class="logo">
+      <span class="logo-mark">CB</span>
+      <span class="logo-word">Click<strong>Beer</strong></span>
+    </a>
+
+    <div class="nav-wrap" id="navWrap">
+      <nav class="nav" id="nav">
+        <a href="#sobre">Sobre</a>
+        <a href="#rede">Rede de lojas</a>
+        <a href="#clube">O clube</a>
+        <a href="#app">App</a>
+        <a href="#entrega">Entrega</a>
+        <a href="#contato">Contato</a>
+      </nav>
+      <a href="#contato" class="btn btn-primary btn-small nav-cta">Fazer parte do clube</a>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero">
+  <div class="wrap hero-inner">
+    <p class="eyebrow">Rede ClickBeer · Campo Grande - MS · desde 2013</p>
+    <h1>Uma cerveja gelada,<br>um clique, <span class="accent">toda a rede.</span></h1>
+    <p class="hero-lead">
+      A nova plataforma da ClickBeer conecta todas as nossas lojas em um único clube de
+      vantagens: pontos, cashback, ofertas feitas pra você e o delivery mais rápido de
+      Campo Grande — tudo em um só lugar.
+    </p>
+    <div class="hero-actions">
+      <a href="#contato" class="btn btn-primary">Quero fazer parte do clube</a>
+      <a href="#rede" class="btn btn-ghost">Ver lojas perto de mim</a>
+    </div>
+
+    <dl class="hero-stats">
+      <div><dt>9+</dt><dd>anos em Campo Grande</dd></div>
+      <div><dt>6+</dt><dd>lojas na rede <span class="tag">confirmar nº atual</span></dd></div>
+      <div><dt>15–20 min</dt><dd>entrega no centro</dd></div>
+    </dl>
+  </div>
+</section>
+
+<!-- ============ SOBRE ============ -->
+<section class="section" id="sobre">
+  <div class="wrap split">
+    <div class="split-text">
+      <p class="kicker">Nossa história</p>
+      <h2>De uma loja de bairro a uma rede figital</h2>
+      <p>
+        A ClickBeer nasceu em Campo Grande em 2013, quando Renato Carlos Pinto de Oliveira decidiu
+        unir a experiência da família — dona da conveniência Cordil — a um jeito novo de comprar
+        bebida gelada: pelo computador ou celular, com entrega rápida em casa.
+      </p>
+      <p>
+        De uma loja só, a ClickBeer virou uma rede espalhada por vários bairros de Campo Grande.
+        Agora o próximo passo é unir toda essa rede numa única plataforma: o mesmo cadastro, os
+        mesmos pontos e as mesmas vantagens em qualquer loja ClickBeer da cidade.
+      </p>
+      <p class="note">
+        Este bloco usa a história pública da marca como ponto de partida — ajuste datas, nomes e
+        detalhes conforme a versão oficial antes de publicar.
+      </p>
+    </div>
+    <div class="split-visual">
+      <div class="timeline">
+        <div class="timeline-item">
+          <span class="timeline-year">2013</span>
+          <p>Primeira loja ClickBeer abre em Campo Grande, com venda por delivery.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2013–2022</span>
+          <p>Expansão da rede: São Francisco, Chácara Cachoeira, Itanhangá/Royal Park, Via Park e mais bairros.</p>
+        </div>
+        <div class="timeline-item">
+          <span class="timeline-year">2022</span>
+          <p>Carandá Bosque inaugura como a 6ª loja da rede.</p>
+        </div>
+        <div class="timeline-item highlight">
+          <span class="timeline-year">Agora</span>
+          <p>Nasce a Plataforma da Rede: um clube único para todas as lojas ClickBeer.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REDE DE LOJAS ============ -->
+<section class="section section-alt" id="rede">
+  <div class="wrap">
+    <p class="kicker center">Onde estamos</p>
+    <h2 class="center">A rede ClickBeer em Campo Grande</h2>
+    <p class="section-lead center">
+      Hoje a ClickBeer tem lojas espalhadas pela cidade. Com a plataforma, não importa em qual
+      loja você compra: os pontos, o cashback e o histórico são sempre os mesmos.
+    </p>
+
+    <div class="store-grid" id="storeGrid">
+      <!-- Lojas preenchidas via js/main.js a partir de js/lojas.js -->
+    </div>
+
+    <p class="note center">
+      Lista de lojas obtida por pesquisa pública — confirme nomes, endereços, telefones e horários
+      reais de cada unidade antes de publicar. Edite o arquivo <code>js/lojas.js</code>.
+    </p>
+  </div>
+</section>
+
+<!-- ============ O CLUBE ============ -->
+<section class="section" id="clube">
+  <div class="wrap">
+    <p class="kicker center">O clube de vantagens</p>
+    <h2 class="center">Toda compra vale mais</h2>
+    <p class="section-lead center">
+      Um clube pensado pra quem já compra na ClickBeer toda semana — com recompensas que
+      acompanham o seu jeito de comprar.
+    </p>
+
+    <div class="card-grid four">
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+        </div>
+        <h3>Pontos</h3>
+        <p>Cada real gasto em qualquer loja da rede vira pontos, trocáveis por desconto ou produtos.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M9 12h6M12 9v6"/></svg>
+        </div>
+        <h3>Cashback</h3>
+        <p>Produtos selecionados devolvem parte do valor em dinheiro pra usar na próxima compra.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M20 12a2 2 0 0 0-2-2 2 2 0 0 1 0-4H6a2 2 0 0 1 0 4 2 2 0 0 0 0 4 2 2 0 0 1 0 4h12a2 2 0 0 1 0-4 2 2 0 0 0 2-2Z"/></svg>
+        </div>
+        <h3>Cupons</h3>
+        <p>Descontos por divulgação ou personalizados, direto no seu perfil do app.</p>
+      </article>
+
+      <article class="card">
+        <div class="card-icon">
+          <svg viewBox="0 0 24 24"><path d="M4 4h16v4H4zM6 8v12h12V8M10 12h4"/></svg>
+        </div>
+        <h3>Ofertas pra você</h3>
+        <p>Preços e combos que mudam conforme o seu histórico de compras — não é genérico, é sob medida.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ APP ============ -->
+<section class="section section-dark" id="app">
+  <div class="wrap split split-reverse">
+    <div class="split-visual">
+      <div class="phone-mock">
+        <div class="phone-notch"></div>
+        <div class="phone-screen">
+          <div class="phone-status">9:41 · ClickBeer</div>
+          <div class="phone-card">
+            <span>Seus pontos</span>
+            <strong>6.505</strong>
+          </div>
+          <div class="phone-row">
+            <div class="phone-chip">-10%<br><small>até 20h</small></div>
+            <div class="phone-chip">-30%<br><small>combo</small></div>
+            <div class="phone-chip">Cashback<br><small>ativo</small></div>
+          </div>
+          <div class="phone-list">
+            <div class="phone-list-item"></div>
+            <div class="phone-list-item"></div>
+            <div class="phone-list-item"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="split-text">
+      <p class="kicker">O app ClickBeer</p>
+      <h2>A rede inteira no seu bolso</h2>
+      <p>
+        Compre, acompanhe pontos e descubra ofertas sem sair de casa — o app conecta você a
+        qualquer loja ClickBeer da cidade.
+      </p>
+      <ul class="check-list">
+        <li>Destaque de ofertas e combos da semana</li>
+        <li>Compra pelo app, com entrega ou retirada</li>
+        <li>Encarte digital, sempre atualizado</li>
+        <li>Notificações de promoções perto de você</li>
+        <li>Lista de compras inteligente</li>
+        <li>Economizômetro: veja quanto você já economizou</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ENTREGA ============ -->
+<section class="section" id="entrega">
+  <div class="wrap">
+    <p class="kicker center">Delivery ClickBeer</p>
+    <h2 class="center">Gelada rápido, do jeito que sempre foi</h2>
+    <p class="section-lead center">
+      Isso não muda: continuamos com o delivery rápido que fez a ClickBeer crescer em Campo Grande.
+    </p>
+
+    <div class="card-grid three">
+      <article class="card card-stat">
+        <strong>15–20 min</strong>
+        <span>entrega na região central <span class="tag">confirmar</span></span>
+      </article>
+      <article class="card card-stat">
+        <strong>25–30 min</strong>
+        <span>entrega nos bairros <span class="tag">confirmar</span></span>
+      </article>
+      <article class="card card-stat">
+        <strong>Embalagem térmica</strong>
+        <span>pra chegar gelada de verdade</span>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ DIFERENCIAIS ============ -->
+<section class="section section-alt">
+  <div class="wrap">
+    <p class="kicker center">Por que ClickBeer</p>
+    <h2 class="center">Tradição de bairro, tecnologia de rede</h2>
+
+    <div class="card-grid four">
+      <article class="card card-simple">
+        <h3>9+ anos</h3>
+        <p>De experiência atendendo Campo Grande.</p>
+      </article>
+      <article class="card card-simple">
+        <h3>Rede local</h3>
+        <p>Lojas espalhadas pela cidade, um clube só.</p>
+      </article>
+      <article class="card card-simple">
+        <h3>Entrega rápida</h3>
+        <p>Delivery pensado pra chegar gelado e no tempo certo.</p>
+      </article>
+      <article class="card card-simple">
+        <h3>Ofertas exclusivas</h3>
+        <p>Vantagens que só quem é do clube ClickBeer tem.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA FINAL ============ -->
+<section class="cta-final" id="contato">
+  <div class="wrap cta-final-inner">
+    <h2>Pronto pra fazer parte da rede?</h2>
+    <p>Baixe o app, cadastre-se em qualquer loja ClickBeer e comece a acumular pontos hoje.</p>
+    <div class="hero-actions center">
+      <a href="#" class="btn btn-primary">Baixar o app</a>
+      <a href="https://www.instagram.com/clickbeercg/" target="_blank" rel="noopener" class="btn btn-ghost-light">Seguir @clickbeercg</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="site-footer">
+  <div class="wrap footer-inner">
+    <div class="footer-brand">
+      <span class="logo-word">Click<strong>Beer</strong></span>
+      <p>Rede de conveniência e delivery de bebidas em Campo Grande - MS, desde 2013.</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Contato</h4>
+      <p>WhatsApp: <span class="tag">confirmar número</span></p>
+      <p>Instagram: <a href="https://www.instagram.com/clickbeercg/" target="_blank" rel="noopener">@clickbeercg</a></p>
+    </div>
+
+    <div class="footer-col">
+      <h4>Rede</h4>
+      <p>6+ lojas em Campo Grande - MS</p>
+      <p><a href="#rede">Ver todas as lojas</a></p>
+    </div>
+  </div>
+  <div class="wrap footer-bottom">
+    <p>© <span id="year"></span> ClickBeer. Todos os direitos reservados.</p>
+    <p class="note">Esboço de trabalho — dados, textos e visual ainda em validação.</p>
+  </div>
+</footer>
+
+<script src="js/lojas.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
